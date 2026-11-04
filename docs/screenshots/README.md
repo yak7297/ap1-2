@@ -13,5 +13,7 @@
 | score.png | 최고 점수 33점 |
 | restart.png | 종료/재실행 후 문제 6개 및 최고 점수 유지 |
 
-아직 없는 화면: environment.png(개발 환경), git-log.png(Git 기록).
+| environment.png | Python 3.14.6, Git 2.55.0, Git 사용자 설정 |
+
+아직 없는 화면: git-log.png(Git 기록).
 목록 화면은 기본 5문제 상태이며, 6문제 저장 유지는 restart.png에서 확인합니다.
