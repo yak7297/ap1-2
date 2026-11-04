@@ -1,6 +1,7 @@
 """메뉴와 게임 진행을 담당합니다."""
 from storage import StateStore
 from quiz import Quiz
+import random
 from inputs import read_number, read_text
 
 
@@ -46,6 +47,7 @@ class QuizGame:
             print("등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가하세요.")
             return
         questions = self.quizzes.copy()
+        random.shuffle(questions)  # 보너스: 원본 목록은 보존하고 출제 순서만 섞습니다.
         correct = 0
         print(f"\n퀴즈를 시작합니다! 총 {len(questions)}문제")
         for index, quiz in enumerate(questions, start=1):
