@@ -1,16 +1,23 @@
 """메뉴와 게임 진행을 담당합니다."""
-from defaults import default_quizzes
+from storage import StateStore
 from quiz import Quiz
 from inputs import read_number, read_text
 
 
 class QuizGame:
-    def __init__(self):
-        self.quizzes = default_quizzes()
-        self.best_score = 0
-        self.played = False
-        self.best_correct = 0
-        self.best_total = 0
+    def __init__(self, store=None):
+        self.store = store if store is not None else StateStore()
+        state = self.store.load()
+        self.quizzes = state["quizzes"]
+        self.best_score = state["best_score"]
+        self.played = state["played"]
+        self.best_correct = state["best_correct"]
+        self.best_total = state["best_total"]
+
+    def save(self):
+        return self.store.save({"quizzes": self.quizzes, "best_score": self.best_score,
+                                "played": self.played, "best_correct": self.best_correct,
+                                "best_total": self.best_total})
 
     def show_menu(self):
         print("\n" + "=" * 40)
@@ -57,7 +64,7 @@ class QuizGame:
             self.best_total = len(questions)
             print("새로운 최고 점수입니다!")
         self.played = True
-        # SAVE_SCORE
+        self.save()
 
     def add_quiz(self):
         print("\n새로운 퀴즈를 추가합니다.")
@@ -66,7 +73,8 @@ class QuizGame:
         answer = read_number("정답 번호 (1~4): ", 1, 4)
         self.quizzes.append(Quiz(question, choices, answer))
         print("퀴즈가 추가되었습니다.")
-        # SAVE_ADDED
+        if self.save():
+            print("파일에 저장했습니다.")
 
     def list_quizzes(self):
         if not self.quizzes:

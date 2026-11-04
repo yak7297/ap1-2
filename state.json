@@ -1,0 +1,58 @@
+{
+  "quizzes": [
+    {
+      "question": "Python에서 정수를 나타내는 자료형은?",
+      "choices": [
+        "str",
+        "int",
+        "list",
+        "dict"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "리스트 끝에 항목을 추가하는 메서드는?",
+      "choices": [
+        "append()",
+        "pop()",
+        "clear()",
+        "keys()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "조건에 따라 실행할 코드를 나누는 키워드는?",
+      "choices": [
+        "for",
+        "import",
+        "if",
+        "def"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "함수를 정의할 때 사용하는 키워드는?",
+      "choices": [
+        "class",
+        "return",
+        "while",
+        "def"
+      ],
+      "answer": 4
+    },
+    {
+      "question": "키와 값의 쌍을 저장하는 자료형은?",
+      "choices": [
+        "bool",
+        "list",
+        "dict",
+        "str"
+      ],
+      "answer": 3
+    }
+  ],
+  "best_score": 0,
+  "played": false,
+  "best_correct": 0,
+  "best_total": 0
+}
