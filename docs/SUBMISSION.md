@@ -16,7 +16,7 @@
 - [ ] GitHub 저장소 clone → README 변경 → commit → push → 원래 폴더 pull
 - [x] 실제 실행 화면 캡처 8개를 README와 연결
 - [x] Python 버전과 Git 설정 개발 환경 캡처
-- [ ] Git 그래프 실제 스크린샷
+- [x] Git 그래프 실제 스크린샷
 - [ ] GitHub URL 제출
 
 ## GitHub에 올리기

@@ -111,7 +111,7 @@ git log --oneline --graph --all
 git rev-list --count HEAD
 ```
 
-GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니다. 실행 캡처 8개와 개발 환경 캡처 1개를 아래에 포함했습니다. Git 그래프 화면 캡처는 아직 없습니다. 원격 업로드와 clone/pull 실습 완료 여부는 `docs/SUBMISSION.md`를 확인하세요. 정확한 절차는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
+GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니다. 실행 캡처 8개, 개발 환경 캡처 1개, Git 그래프 캡처 1개를 아래에 포함했습니다. 원격 업로드와 clone/pull 실습 완료 여부는 `docs/SUBMISSION.md`를 확인하세요. 정확한 절차는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
 
 
 ## 실제 실행 화면
@@ -148,7 +148,8 @@ GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니�
 Python 3.14.6, Git 2.55.0과 Git 사용자 설정을 확인했습니다.
 ![Python 버전과 Git 설정](docs/screenshots/environment.png)
 
-### 아직 필요한 화면
-- Git 기록: `git log --oneline --graph --all`
+### Git 커밋과 브랜치 병합 기록
+캡처 시점의 커밋 15개와 `feature/quiz-play` 브랜치의 생성·병합을 확인할 수 있습니다. 이후 자료 추가 커밋은 이 이미지에 포함되지 않습니다.
+![Git 커밋 그래프와 브랜치 병합](docs/screenshots/git-log.png)
 
 자동 테스트 로그와 실제 실행 캡처는 별도로 관리합니다. 이 README에는 실제로 존재하는 이미지 파일만 연결했습니다.

@@ -15,5 +15,7 @@
 
 | environment.png | Python 3.14.6, Git 2.55.0, Git 사용자 설정 |
 
-아직 없는 화면: git-log.png(Git 기록).
+Git 커밋 그래프: git-log.png (캡처 시점 15개 커밋과 기능 브랜치 병합).
+
+실행 8개, 개발 환경 1개, Git 기록 1개로 총 10개 캡처를 확보했습니다. 원격 clone/pull 실습 증거는 별도로 남겨야 합니다.
 목록 화면은 기본 5문제 상태이며, 6문제 저장 유지는 restart.png에서 확인합니다.
