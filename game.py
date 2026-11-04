@@ -52,7 +52,13 @@ class QuizGame:
         # SCORE_UPDATE
 
     def add_quiz(self):
-        print("준비 중입니다.")
+        print("\n새로운 퀴즈를 추가합니다.")
+        question = read_text("문제: ")
+        choices = [read_text(f"선택지 {index}: ") for index in range(1, 5)]
+        answer = read_number("정답 번호 (1~4): ", 1, 4)
+        self.quizzes.append(Quiz(question, choices, answer))
+        print("퀴즈가 추가되었습니다.")
+        # SAVE_ADDED
 
     def list_quizzes(self):
         print("준비 중입니다.")
