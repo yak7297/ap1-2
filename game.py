@@ -33,7 +33,23 @@ class QuizGame:
                 break
 
     def play(self):
-        print("준비 중입니다.")
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가하세요.")
+            return
+        questions = self.quizzes.copy()
+        correct = 0
+        print(f"\n퀴즈를 시작합니다! 총 {len(questions)}문제")
+        for index, quiz in enumerate(questions, start=1):
+            quiz.display(index)
+            answer = read_number("정답 번호 (1~4): ", 1, 4)
+            if quiz.is_correct(answer):
+                correct += 1
+                print("정답입니다!")
+            else:
+                print(f"오답입니다. 정답: {quiz.answer}. {quiz.choices[quiz.answer - 1]}")
+        score = round(correct / len(questions) * 100)
+        print(f"\n결과: {len(questions)}문제 중 {correct}문제 정답! ({score}점)")
+        # SCORE_UPDATE
 
     def add_quiz(self):
         print("준비 중입니다.")
