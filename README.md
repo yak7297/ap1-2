@@ -60,16 +60,16 @@ python-quiz-game/
 │   ├── LEARNING.md         # 코드 설명과 학습 정리
 │   ├── SUBMISSION.md       # GitHub 업로드와 제출 체크리스트
 │   ├── evidence/           # 실제 테스트 및 실행 로그
-│   └── screenshots/README.md # 직접 캡처할 화면 안내
+│   └── screenshots/          # 사용자가 직접 캡처한 실제 실행 이미지
 ├── .gitignore
 └── README.md
 ```
 
 ## 데이터 파일 설명
 
-`state.json`은 현재 터미널 위치와 관계없이 **프로그램 파일이 있는 프로젝트 루트**에 저장됩니다. UTF-8과 `ensure_ascii=False`로 한글을 읽을 수 있게 저장합니다. 제출용 초기 파일에는 문제 5개와 미플레이 상태가 담겨 있습니다.
+`state.json`은 현재 터미널 위치와 관계없이 **프로그램 파일이 있는 프로젝트 루트**에 저장됩니다. UTF-8과 `ensure_ascii=False`로 한글을 읽을 수 있게 저장합니다. 기본 문제는 5개입니다. 현재 로컬 파일에는 사용자 실습에서 추가한 문제까지 총 6개와 최고 점수 33점이 저장되어 있습니다. 저장 파일이 없을 때는 기본 5문제로 시작합니다.
 
-데이터 형식 예시 (실제 파일에는 기본 문제 5개가 포함됨):
+데이터 형식 예시 (구조 설명을 위한 미플레이 상태):
 
 ```json
 {
@@ -111,4 +111,41 @@ git log --oneline --graph --all
 git rev-list --count HEAD
 ```
 
-**GitHub 저장소 생성/업로드, 원격 clone → 변경 → commit → push → 기존 폴더 pull 실습, 제출용 실제 화면 캡처는 아직 완료되지 않았습니다.** 정확한 절차는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
+GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니다. 실행 캡처 8개를 아래에 포함했습니다. 개발 환경과 Git 그래프 화면 캡처는 아직 없습니다. 원격 업로드와 clone/pull 실습 완료 여부는 `docs/SUBMISSION.md`를 확인하세요. 정확한 절차는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
+
+
+## 실제 실행 화면
+
+사용자가 2026-11-04에 VS Code 터미널에서 직접 실행하고 캡처한 화면입니다.
+
+### 메뉴
+![메뉴 실행 화면](docs/screenshots/menu.png)
+
+### 기본 문제 목록
+추가하기 전 기본 문제 5개입니다.
+![기본 퀴즈 목록](docs/screenshots/list.png)
+
+### 퀴즈 추가와 파일 저장
+![퀴즈 추가와 저장 완료](docs/screenshots/add_quiz.png)
+
+### 랜덤 출제와 정답·오답 판정
+목록의 두 번째 문제인 리스트 문제가 마지막에 출제되는 등 원래 목록과 다른 순서로 출제됩니다.
+![플레이 앞부분](docs/screenshots/play.png)
+![플레이 중간 부분](docs/screenshots/play-middle.png)
+
+### 최종 결과
+6문제 중 2개 정답으로 33점을 기록했습니다.
+![최종 결과 33점](docs/screenshots/result.png)
+
+### 최고 점수 확인
+![최고 점수 확인](docs/screenshots/score.png)
+
+### 종료 후 재실행
+추가한 문제를 포함한 6개 문제와 최고 점수 33점이 유지됩니다.
+![재실행과 데이터 유지](docs/screenshots/restart.png)
+
+### 아직 필요한 화면
+- 개발 환경: VS Code, Python 버전, Git 버전과 사용자 설정
+- Git 기록: `git log --oneline --graph --all`
+
+자동 테스트 로그와 실제 실행 캡처는 별도로 관리합니다. 이 README에는 실제로 존재하는 이미지 파일만 연결했습니다.
