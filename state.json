@@ -49,10 +49,20 @@
         "str"
       ],
       "answer": 3
+    },
+    {
+      "question": "Python에서 참과 거짓을 나타내는 자료형은?",
+      "choices": [
+        "bool",
+        "str",
+        "int",
+        "list"
+      ],
+      "answer": 1
     }
   ],
-  "best_score": 0,
-  "played": false,
-  "best_correct": 0,
-  "best_total": 0
+  "best_score": 33,
+  "played": true,
+  "best_correct": 2,
+  "best_total": 6
 }
