@@ -1,10 +1,12 @@
 """메뉴와 게임 진행을 담당합니다."""
+from defaults import default_quizzes
+from quiz import Quiz
 from inputs import read_number, read_text
 
 
 class QuizGame:
     def __init__(self):
-        self.quizzes = []
+        self.quizzes = default_quizzes()
         self.best_score = 0
         self.played = False
 
