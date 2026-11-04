@@ -9,6 +9,8 @@ class QuizGame:
         self.quizzes = default_quizzes()
         self.best_score = 0
         self.played = False
+        self.best_correct = 0
+        self.best_total = 0
 
     def show_menu(self):
         print("\n" + "=" * 40)
@@ -49,7 +51,13 @@ class QuizGame:
                 print(f"오답입니다. 정답: {quiz.answer}. {quiz.choices[quiz.answer - 1]}")
         score = round(correct / len(questions) * 100)
         print(f"\n결과: {len(questions)}문제 중 {correct}문제 정답! ({score}점)")
-        # SCORE_UPDATE
+        if not self.played or score > self.best_score:
+            self.best_score = score
+            self.best_correct = correct
+            self.best_total = len(questions)
+            print("새로운 최고 점수입니다!")
+        self.played = True
+        # SAVE_SCORE
 
     def add_quiz(self):
         print("\n새로운 퀴즈를 추가합니다.")
@@ -69,4 +77,7 @@ class QuizGame:
             print(f"[{index}] {quiz.question}")
 
     def show_score(self):
-        print("준비 중입니다.")
+        if not self.played:
+            print("아직 퀴즈를 풀지 않았습니다.")
+            return
+        print(f"최고 점수: {self.best_score}점 ({self.best_total}문제 중 {self.best_correct}문제 정답)")
