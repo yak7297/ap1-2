@@ -1,4 +1,11 @@
-"""프로그램 시작점."""
+"""python3 main.py로 실행하세요."""
+from game import QuizGame
+
+
+def main():
+    game = QuizGame()
+    game.run()
+
 
 if __name__ == "__main__":
-    print("Python 기초 퀴즈 게임을 준비합니다.")
+    main()
