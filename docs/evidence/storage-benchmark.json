@@ -1,0 +1,30 @@
+{
+  "measured_at_utc": "2026-11-08T15:45:07.693554+00:00",
+  "python": "3.14.6",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "samples_per_size": 3,
+  "method": "Temporary directory; full StateStore.save/load; timing median without tracing; separate load peak via tracemalloc, excludes pre-existing objects and native/process memory.",
+  "results": [
+    {
+      "quizzes": 100,
+      "file_bytes": 21290,
+      "save_median_ms": 0.483,
+      "load_median_ms": 0.16,
+      "load_python_peak_bytes": 218060
+    },
+    {
+      "quizzes": 1000,
+      "file_bytes": 212990,
+      "save_median_ms": 3.955,
+      "load_median_ms": 1.426,
+      "load_python_peak_bytes": 1056746
+    },
+    {
+      "quizzes": 10000,
+      "file_bytes": 2138990,
+      "save_median_ms": 30.205,
+      "load_median_ms": 13.035,
+      "load_python_peak_bytes": 9557002
+    }
+  ]
+}

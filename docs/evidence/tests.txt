@@ -1,19 +1,19 @@
-test_add_and_reload_unicode_quiz (test_quiz_game.QuizGameTests) ... ok
-test_corrupt_json_and_schema_recover (test_quiz_game.QuizGameTests) ... ok
-test_empty_quiz_list_is_valid (test_quiz_game.QuizGameTests) ... ok
-test_first_play_zero_is_a_played_score (test_quiz_game.QuizGameTests) ... ok
-test_interrupted_add_does_not_append_partial_quiz (test_quiz_game.QuizGameTests) ... ok
-test_interrupted_play_keeps_existing_score (test_quiz_game.QuizGameTests) ... ok
-test_invalid_utf8_recovers (test_quiz_game.QuizGameTests) ... ok
-test_main_keyboardinterrupt_safely_saves (test_quiz_game.QuizGameTests) ... ok
-test_missing_file_uses_five_quizzes (test_quiz_game.QuizGameTests) ... ok
-test_no_play_yet_message (test_quiz_game.QuizGameTests) ... ok
-test_numeric_input_retries_blank_text_and_out_of_range (test_quiz_game.QuizGameTests) ... ok
-test_play_saves_best_and_lower_score_does_not_replace_it (test_quiz_game.QuizGameTests) ... ok
-test_read_error_and_write_error_are_reported (test_quiz_game.QuizGameTests) ... ok
-test_real_process_restarts_and_handles_eof_from_other_directory (test_quiz_game.QuizGameTests) ... ok
+test_add_and_reload_unicode_quiz (test_quiz_game.QuizGameTests.test_add_and_reload_unicode_quiz) ... ok
+test_corrupt_json_and_schema_recover (test_quiz_game.QuizGameTests.test_corrupt_json_and_schema_recover) ... ok
+test_empty_quiz_list_is_valid (test_quiz_game.QuizGameTests.test_empty_quiz_list_is_valid) ... ok
+test_first_play_zero_is_a_played_score (test_quiz_game.QuizGameTests.test_first_play_zero_is_a_played_score) ... ok
+test_interrupted_add_does_not_append_partial_quiz (test_quiz_game.QuizGameTests.test_interrupted_add_does_not_append_partial_quiz) ... ok
+test_interrupted_play_keeps_existing_score (test_quiz_game.QuizGameTests.test_interrupted_play_keeps_existing_score) ... ok
+test_invalid_utf8_recovers (test_quiz_game.QuizGameTests.test_invalid_utf8_recovers) ... ok
+test_main_keyboardinterrupt_safely_saves (test_quiz_game.QuizGameTests.test_main_keyboardinterrupt_safely_saves) ... ok
+test_missing_file_uses_five_quizzes (test_quiz_game.QuizGameTests.test_missing_file_uses_five_quizzes) ... ok
+test_no_play_yet_message (test_quiz_game.QuizGameTests.test_no_play_yet_message) ... ok
+test_numeric_input_retries_blank_text_and_out_of_range (test_quiz_game.QuizGameTests.test_numeric_input_retries_blank_text_and_out_of_range) ... ok
+test_play_saves_best_and_lower_score_does_not_replace_it (test_quiz_game.QuizGameTests.test_play_saves_best_and_lower_score_does_not_replace_it) ... ok
+test_read_error_and_write_error_are_reported (test_quiz_game.QuizGameTests.test_read_error_and_write_error_are_reported) ... ok
+test_real_process_restarts_and_handles_eof_from_other_directory (test_quiz_game.QuizGameTests.test_real_process_restarts_and_handles_eof_from_other_directory) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.060s
+Ran 14 tests in 0.058s
 
 OK

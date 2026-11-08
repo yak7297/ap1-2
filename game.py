@@ -27,6 +27,7 @@ class QuizGame:
         print("1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료")
 
     def run(self):
+        # 메뉴 출력 → 번호 검증 → 선택 기능 실행을 반복하고 5번이면 종료합니다.
         while True:
             self.show_menu()
             choice = read_number("선택: ", 1, 5)

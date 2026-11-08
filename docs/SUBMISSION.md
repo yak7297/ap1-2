@@ -98,3 +98,17 @@ GitHub에서 README, 코드, state.json, 스크린샷과 10개 이상의 커밋�
 - 추가 설명: [기능별 출력 모음](USAGE.md), README의 저장 시점·중단 시 반영 범위, 클래스 호출 흐름·책임 경계, 데이터 호환성, 수정 위치 표, [캡처 시각 목록](screenshots/README.md)
 
 위 항목은 평가 지적에 대한 문서 보완 기록입니다. 외부 재평가 결과를 의미하지 않습니다. 문제 출처는 학습용 직접 작성이며 난이도는 Python 입문 수준입니다. 난이도 필드, DB, append 로그, 상세 오류 로그 자동 누적은 이번 문서 수정에서 새로 구현하지 않았습니다.
+
+
+## 두 번째 평가 피드백 보완: README 본문에 직접 포함
+
+다른 문서를 수집하지 않는 경우에도 확인하도록 핵심 설계 설명을 README 본문으로 포함했습니다.
+
+- #8: [Quiz·QuizGame·StateStore 책임과 경계](../README.md#class-responsibilities)
+- #9: [inputs.py와 storage.py 분리 근거](../README.md#input-io-design)
+- #13: [클래스 선택 이유와 함수 중심 구현의 장단점](../README.md#object-oriented-reasons)
+- #20: [요구변경별 파일·메서드·연결 영향 표](../README.md#change-impact)
+
+주요 이력: `a85ff88`은 기능 브랜치의 플레이 구현, `c38eac4`는 main에 해당 기능을 --no-ff 병합한 커밋, `b671389`은 복제본 README 변경을 원래 폴더에서 pull한 실습 커밋입니다. `main`과 `feature/기능명`으로 분리하고 기능 확인 후 병합합니다. PR과 main 보호는 이번 실습에서 사용·검증하지 않았습니다. 커밋 예시는 README의 Git 기록 절에 직접 포함했습니다.
+
+이 문서 보완 여부와 외부 재평가 결과는 별개입니다. 재평가가 가져간 커밋이 이번 보완 커밋인지도 확인해야 합니다.
