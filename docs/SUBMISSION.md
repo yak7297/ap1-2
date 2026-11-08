@@ -13,7 +13,7 @@
 - [x] README 필수 항목과 자동 검증 결과
 - [x] GitHub 저장소 생성: https://github.com/yak7297/ap1-2
 - [x] 코드와 기존 자료를 GitHub로 push
-- [ ] 이번에 추가한 Git 실습 증거와 문서 정리를 최종 push
+- [x] Git 실습 증거와 문서 정리 업로드 (3e18b3e)
 - [x] GitHub 저장소 clone → README 변경 → commit → push → 원래 폴더 pull (2026-11-08, b671389)
 - [x] 실제 실행 화면 캡처 8개를 README와 연결
 - [x] Python 버전과 Git 설정 개발 환경 캡처
@@ -87,4 +87,14 @@ git push
 
 GitHub에서 README, 코드, state.json, 스크린샷과 10개 이상의 커밋이 보이는지 확인합니다. GitHub 저장소 URL과 수업에서 요구한 이미지 파일을 제출합니다. 자동 테스트 성공만으로 원격 업로드와 캡처 제출이 완료된 것은 아닙니다.
 
-실제 캡처 14개는 docs/screenshots/README.md에 정리했습니다. 2026-11-04 업로드와 2026-11-08 clone/push/pull 실습에 성공했습니다. Git 실습 마지막 커밋 b671389과 README 문구 반영을 캡처 및 로컬 이력으로 확인했습니다. 이번 증거 정리 변경은 최종 push가 필요합니다.
+실제 캡처 14개는 docs/screenshots/README.md에 정리했습니다. 2026-11-04 업로드와 2026-11-08 clone/push/pull 실습에 성공했습니다. Git 실습 마지막 커밋 b671389과 README 문구 반영을 캡처 및 로컬 이력으로 확인했습니다. Git 실습 증거와 문서 정리 커밋 3e18b3e는 GitHub main에 반영되었습니다.
+
+
+## 평가 피드백 문서 보완
+
+- 평가 #12: [커밋 프리픽스, 한 줄 요약과 권장 작업 단위](LEARNING.md#commit-convention)
+- 평가 #13: [클래스 사용 이유와 절차적 구현 대비 장단점](LEARNING.md#class-design)
+- 평가 #18: [JSON 저장의 성능·메모리·동시성 한계 및 대안](LEARNING.md#json-tradeoffs)
+- 추가 설명: [기능별 출력 모음](USAGE.md), README의 저장 시점·중단 시 반영 범위, 클래스 호출 흐름·책임 경계, 데이터 호환성, 수정 위치 표, [캡처 시각 목록](screenshots/README.md)
+
+위 항목은 평가 지적에 대한 문서 보완 기록입니다. 외부 재평가 결과를 의미하지 않습니다. 문제 출처는 학습용 직접 작성이며 난이도는 Python 입문 수준입니다. 난이도 필드, DB, append 로그, 상세 오류 로그 자동 누적은 이번 문서 수정에서 새로 구현하지 않았습니다.

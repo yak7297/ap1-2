@@ -1,26 +1,22 @@
-# 실제 실행 캡처
+# 실제 캡처 목록과 시각
 
-사용자가 직접 제공한 원본 PNG를 변경하지 않고 복사했습니다.
+사용자가 제공한 PNG를 수정하지 않고 복사했습니다. 아래 캡처 시각은 사용자가 첨부한 원본 파일명에 기록된 한국 시각(KST)이며 Git 커밋 시각과는 별개입니다. 총 14개입니다.
 
-| 파일 | 확인 내용 |
-| --- | --- |
-| menu.png | VS Code에서 프로그램 실행 및 메뉴 |
-| list.png | 기본 문제 5개 목록 |
-| add_quiz.png | 문제 추가와 파일 저장 완료 |
-| play.png | 정답/오답 판정 |
-| play-middle.png | 추가한 문제 출제와 중간 풀이 |
-| result.png | 6문제 중 2개 정답, 33점 |
-| score.png | 최고 점수 33점 |
-| restart.png | 종료/재실행 후 문제 6개 및 최고 점수 유지 |
+| 파일 | 캡처 시각 (KST) | 확인 내용 |
+| --- | --- | --- |
+| [menu.png](menu.png) | 2026-11-04 21:13:02 | VS Code 메뉴 실행 |
+| [list.png](list.png) | 2026-11-04 21:18:17 | 기본 문제 5개 목록 |
+| [add_quiz.png](add_quiz.png) | 2026-11-04 21:20:23 | 문제 추가와 저장 |
+| [play.png](play.png) | 2026-11-04 21:22:17 | 플레이 앞부분 |
+| [play-middle.png](play-middle.png) | 2026-11-04 21:22:22 | 플레이 중간 |
+| [result.png](result.png) | 2026-11-04 21:22:26 | 6문제 중 2개 정답, 33점 |
+| [score.png](score.png) | 2026-11-04 21:23:06 | 최고 점수 |
+| [restart.png](restart.png) | 2026-11-04 21:23:32 | 재실행 후 6개·33점 유지 |
+| [environment.png](environment.png) | 2026-11-04 21:27:21 | Python·Git 버전과 사용자 설정 |
+| [git-log.png](git-log.png) | 2026-11-04 21:29:17 | 캡처 당시 커밋 15개·브랜치 병합 |
+| [push.png](push.png) | 2026-11-04 21:31:53 | main·기능 브랜치 업로드 |
+| [clone.png](clone.png) | 2026-11-08 12:07:05 | 원격 저장소 복제 |
+| [clone-push.png](clone-push.png) | 2026-11-08 12:09:40 | 복제본 변경·commit·push |
+| [pull.png](pull.png) | 2026-11-08 12:10:51 | 원래 폴더에서 pull·문구 확인 |
 
-| environment.png | Python 3.14.6, Git 2.55.0, Git 사용자 설정 |
-
-Git 커밋 그래프: git-log.png (캡처 시점 15개 커밋과 기능 브랜치 병합).
-
-실행 8개, 개발 환경 1개, Git 기록 1개, Git 실습 4개로 총 14개 캡처를 확보했습니다.
-
-- push.png: main과 기능 브랜치 업로드
-- clone.png: 원격 저장소 복제
-- clone-push.png: 복제본 README 변경, commit, push
-- pull.png: 원래 폴더에서 pull 및 내용 반영 확인
-목록 화면은 기본 5문제 상태이며, 6문제 저장 유지는 restart.png에서 확인합니다.
+기본 목록 사진은 문제를 추가하기 전 5개 상태입니다. 추가 후 6개와 최고 점수 유지는 restart.png에서 확인합니다. git-log.png에는 캡처 당시 15개 커밋만 표시되며 이후 커밋은 현재 Git 이력을 확인해야 합니다. 이미지 자체에 글자나 시각을 덧씌우지 않았습니다.
