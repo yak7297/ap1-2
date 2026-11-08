@@ -111,7 +111,7 @@ git log --oneline --graph --all
 git rev-list --count HEAD
 ```
 
-GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니다. 실행 캡처 8개, 개발 환경 캡처 1개, Git 그래프 캡처 1개를 아래에 포함했습니다. 원격 업로드와 clone/pull 실습 완료 여부는 `docs/SUBMISSION.md`를 확인하세요. 정확한 절차는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
+GitHub 제출 대상은 [yak7297/ap1-2](https://github.com/yak7297/ap1-2)입니다. 실행 캡처 8개, 개발 환경과 Git 그래프 각 1개, Git 업로드와 복제 실습 캡처 4개로 총 14개를 포함했습니다. main과 기능 브랜치 업로드, 원격 clone → README 수정 → commit → push → 원래 폴더 pull 실습을 완료했습니다. 제출 점검표는 `docs/SUBMISSION.md`에 있습니다. 폴더를 복사할 때 숨김 폴더 `.git`도 유지해야 기존 커밋과 병합 기록을 보존할 수 있습니다. 소스 코드 ZIP만 GitHub에 올리면 커밋 기록은 전달되지 않습니다.
 
 
 ## 실제 실행 화면
@@ -155,3 +155,20 @@ Python 3.14.6, Git 2.55.0과 Git 사용자 설정을 확인했습니다.
 자동 테스트 로그와 실제 실행 캡처는 별도로 관리합니다. 이 README에는 실제로 존재하는 이미지 파일만 연결했습니다.
 
 GitHub 복제 실습을 완료했습니다.
+
+
+## GitHub 업로드와 clone/pull 실습 증거
+
+### main 및 기능 브랜치 업로드 (2026-11-04)
+![두 브랜치 GitHub 업로드 성공](docs/screenshots/push.png)
+
+### 별도 폴더로 clone (2026-11-08)
+![GitHub 저장소 복제 성공](docs/screenshots/clone.png)
+
+### 복제본에서 README 수정, commit, push
+복제 폴더에서 확인 문구를 추가하고 `b671389` 커밋을 만든 뒤 원격 main에 반영했습니다.
+![복제본 README 변경과 업로드](docs/screenshots/clone-push.png)
+
+### 원래 폴더에서 pull 및 반영 확인
+`git pull --ff-only`로 `03f76b0`에서 `b671389`로 이동했습니다. `git log -1`과 `tail -3 README.md`로 같은 커밋 및 추가 문구를 확인했습니다.
+![원래 폴더에서 pull과 변경 반영 확인](docs/screenshots/pull.png)
